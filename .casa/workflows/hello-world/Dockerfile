@@ -5,4 +5,7 @@ RUN apt-get -y update \
     && apt-get -y update
 
 COPY /root/ /root
+
 WORKDIR /root
+
+RUN pip install -r requirements.txt
